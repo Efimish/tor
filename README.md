@@ -1,6 +1,7 @@
 # Tor container
 
-Tor with bridges alpine image, 76mb in size.
+Tor with bridges alpine image, 76mb in size
 
-1. Add bridges to `torrc` file
-2. `podman compose up -d`
+Available at `ghcr.io/efimish/tor`
+
+Don't forget to add bridges to `torrc`
