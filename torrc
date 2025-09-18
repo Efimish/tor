@@ -1,0 +1,9 @@
+SocksPort 0.0.0.0:9050
+
+ClientTransportPlugin obfs4 exec /usr/bin/lyrebird
+ClientTransportPlugin webtunnel exec /usr/bin/webtunnel-client
+
+UseBridges 1
+
+# Bridge obfs4 <HOST>:<PORT> <FINGERPRINT> cert=<CERT> iat-mode=<0|1|2>
+# Bridge webtunnel <HOST>:<PORT> <FINGERPRINT> url=<URL>

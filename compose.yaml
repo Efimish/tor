@@ -1,0 +1,11 @@
+services:
+  tor:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: tor
+    restart: unless-stopped
+    volumes:
+      - ./torrc:/etc/tor/torrc
+    ports:
+      - "9050:9050/tcp"
