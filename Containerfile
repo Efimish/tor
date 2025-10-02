@@ -3,7 +3,7 @@ FROM alpine:edge
 LABEL maintainer="Efim Ishenin <me@efima.ru>" \
       org.opencontainers.image.title="tor" \
       org.opencontainers.image.description="Tor with bridges" \
-      org.opencontainers.image.source="https://github.com/Efimish/tor-container" \
+      org.opencontainers.image.source="https://github.com/Efimish/tor" \
       org.opencontainers.image.licenses="MIT"
 
 RUN echo 'https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
