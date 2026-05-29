@@ -1,7 +1,6 @@
-# Tor container
+# Tor with bridges alpine image
 
-Tor with bridges alpine image, 76mb in size
-
-Available at `ghcr.io/efimish/tor`
-
-Don't forget to add bridges to `torrc`
+```bash
+# Run with docker
+docker run --name tor -d -p 127.0.0.1:9050:9050/tcp ghcr.io/efimish/tor
+```

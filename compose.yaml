@@ -1,9 +1,10 @@
 services:
   tor:
-    build: .
+    # build: .
+    image: ghcr.io/efimish/tor
     container_name: tor
     restart: unless-stopped
-    volumes:
-      - ./torrc:/etc/tor/torrc
     ports:
-      - "9050:9050/tcp"
+      - "127.0.0.1:9050:9050/tcp"
+    # volumes:
+    #   - ./torrc:/etc/tor/torrc
