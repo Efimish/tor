@@ -10,7 +10,7 @@ RUN echo 'https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposi
     apk upgrade && \
     apk add tor lyrebird webtunnel curl && \
     chmod 700 /var/lib/tor && \
-    curl -fsSL https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/TOR-BRIDGES/TOR_BRIDGES_WEBTUNNEL.txt | sed '/^#/d; /^\s*$/d; s/^/Bridge /' > /etc/tor/bridges.txt && \
+    curl -fsSL https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/TOR-BRIDGES/TOR_BRIDGES_WEBTUNNEL.txt | sed '/^#/d; /^\s*$/d; s/^/Bridge /' > /etc/tor/bridges.txt && \
     rm -rf /var/cache/apk/*
 
 COPY torrc /etc/tor/torrc
