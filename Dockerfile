@@ -8,7 +8,7 @@ LABEL maintainer="Efim Ishenin <efim.ishenin@gmail.com>" \
 
 RUN echo 'https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
     apk upgrade && \
-    apk add tor lyrebird webtunnel curl && \
+    apk add tor lyrebird curl && \
     chmod 700 /var/lib/tor && \
     curl -fsSL https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/TOR-BRIDGES/TOR_BRIDGES_WEBTUNNEL.txt | sed '/^#/d; /^\s*$/d; s/^/Bridge /' > /etc/tor/bridges.txt && \
     rm -rf /var/cache/apk/*

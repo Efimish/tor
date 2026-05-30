@@ -1,7 +1,12 @@
 SocksPort 0.0.0.0:9050
 
+ClientTransportPlugin meek_lite exec /usr/bin/lyrebird
+ClientTransportPlugin obfs2 exec /usr/bin/lyrebird
+ClientTransportPlugin obfs3 exec /usr/bin/lyrebird
 ClientTransportPlugin obfs4 exec /usr/bin/lyrebird
-ClientTransportPlugin webtunnel exec /usr/bin/webtunnel-client
+ClientTransportPlugin scramblesuit exec /usr/bin/lyrebird
+ClientTransportPlugin webtunnel exec /usr/bin/lyrebird
+ClientTransportPlugin snowflake exec /usr/bin/lyrebird
 
 UseBridges 1
 
